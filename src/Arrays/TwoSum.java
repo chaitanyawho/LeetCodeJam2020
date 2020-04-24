@@ -6,7 +6,7 @@ class TwoSum {
         HashMap<Integer, Integer> hm = new HashMap<Integer, Integer>();
         HashMap<Integer, Integer> repeated = new HashMap<Integer, Integer>();
         int k = 0;
-        for(Integer i: nums){
+        for(Integer i: nums){//this can be done on the fly, don't look for duplicate values AND look for complement in the previously added elements
             if(hm.containsKey(i)) repeated.put(i, k);
             else hm.put(i, k);//update position to last index where i occurs if i is repeated
             k++;
