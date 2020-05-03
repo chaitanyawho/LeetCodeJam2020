@@ -11,7 +11,6 @@ public class LongestRepeatingCharReplacement {
                 start ++;
             }
             maxLen = Math.max(maxLen, end - start + 1);
-
         }
         return maxLen;
     }
